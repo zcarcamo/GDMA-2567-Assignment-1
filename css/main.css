@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------
+>>> CSS STANDARDS
+----------------------------------------------------------------
+1. Place in appropriate section
+2. Add new sections to the Table of Contents as needed
+3. Order properties consistently inside each declaration i.e. alphabetically or by function 
+4. Declaration selectors should each occupy a new line
+5. Enter one new line between rules
+6. Enter more than one new line between categories 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment	    
+        - Color
+        - Size
+
+--------------------------------------------------------------*/
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+}
+
+/*--------------------------------------------------------------
+3.0 - GENERIC
+-------------------------------------------------------------- */
+
+html {
+	font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+	html {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	html {
+		font-size: 1rem;
+	}
+}
+
+
+/*--------------------------------------------------------------
+4.0 - ELEMENTS
+-------------------------------------------------------------- */
+
+/* -- TYPOGRAPHY -- */ 
+
+h1, h4 {
+	font-family: 'Pacifico', cursive;
+	font-size: 1.25rem;
+}
+
+h1+p {
+	font-size: .75rem;
+}
+
+header div>p {
+	color: #798D8A;
+}
+
+li, h1, h1+p {
+	display: inline-block;
+}
+
+li a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+li a:hover{
+	color: #798D8A;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 700;
+	padding: 60px 0 20px 0;
+	margin: 0 440px 40px 440px;
+	border-bottom: 1px solid #DCE1E5;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 700;
+}
+
+h4 {
+	margin-top: 0;
+}
+
+#bg-green>.wrapper p:first-child {
+	padding-top: 320px;
+}
+
+#bg-green>.wrapper p:last-child {
+	padding-bottom: 160px;
+	margin-bottom: 0;
+}
+
+#bg-green>.wrapper p {
+	line-height: .60em;
+	color: #FFF;
+}
+
+#bg-green>.wrapper p {
+	font-size: 2.25rem;
+	font-weight: 300;
+}
+
+#bg-green>.wrapper p:last-child {
+	font-size: 1rem;
+	font-weight: 200;
+}
+
+#bg-green>.wrapper p {
+	text-align: center;
+}
+
+#bold {
+	font-weight: 700;
+}
+
+#highlight, h2 {
+	color: #0EB493;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+	
+}
+
+@media only screen and (min-width: 1024px) {
+	
+}
+
+/*--------------------------------------------------------------
+5.0 - OBJECTS
+-------------------------------------------------------------- */
+
+/* -- FRAMEWORK -- */ 
+
+.wrapper.row div, .col-1-3 {
+	float: left;
+}
+
+nav, .col-1-3:last-child {
+	float: right;
+}
+
+.col-1-3, #works div {
+	padding-bottom: 160px;
+}
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+/*NAVIGATION*/
+
+nav {
+	font-size: .75rem;
+	vertical-align: middle;
+}
+
+[class*="col-"] nav {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+li {
+	margin-left: 25px;
+}
+
+/* -- FOOTER -- */
+
+footer {
+	background-color: #1EA78D;
+	color: #FFF;
+	border-top: 5px solid #062033;
+	padding: 120px;
+}
+
+footer div {
+	width: 300px;
+}
+
+/*--------------------------------------------------------------
+7.0 - UTILITIES
+-------------------------------------------------------------- */
+#bg-green {
+	background-color: #104F41;
+}
+
+#bg-dark-green {
+	background-color: #10443F;
+	color: #FFF;
+}
+
+#bg-light-green {
+	background-color: #F4F7F9;
+}
+
+.f-left {
+	float: left;
+}
+
+.f-right {
+	float: right;
+}
