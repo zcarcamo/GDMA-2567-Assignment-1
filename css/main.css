@@ -71,15 +71,17 @@ html {
 
 h1, h4 {
 	font-family: 'Pacifico', cursive;
-	font-size: 1.25rem;
 }
 
 h1+p {
-	font-size: .75rem;
+	color: #798D8A;
+	font-size: .9rem;
+	margin-bottom: 2em;
+	vertical-align: middle;
 }
 
-header div>p {
-	color: #798D8A;
+header .col-sm-6:first-child {
+	margin: 0;
 }
 
 li, h1, h1+p {
@@ -98,8 +100,6 @@ li a:hover{
 h2 {
 	text-align: center;
 	font-weight: 700;
-	padding: 60px 0 20px 0;
-	margin: 0 440px 40px 440px;
 	border-bottom: 1px solid #DCE1E5;
 	text-transform: uppercase;
 }
@@ -112,13 +112,8 @@ h4 {
 	margin-top: 0;
 }
 
-#bg-green>.wrapper p:first-child {
-	padding-top: 320px;
-}
-
-#bg-green>.wrapper p:last-child {
-	padding-bottom: 160px;
-	margin-bottom: 0;
+#hero p:first-child {
+	font-size: 3.5rem;
 }
 
 #bg-green>.wrapper p {
@@ -165,20 +160,6 @@ footer p {
 5.0 - OBJECTS
 -------------------------------------------------------------- */
 
-/* -- FRAMEWORK -- */ 
-
-.wrapper.row div, .col-1-3 {
-	float: left;
-}
-
-nav, .col-1-3:last-child {
-	float: right;
-}
-
-.col-1-3, #works div {
-	padding-bottom: 160px;
-}
-
 /*--------------------------------------------------------------
 6.0 - COMPONENTS
 -------------------------------------------------------------- */
@@ -187,12 +168,9 @@ nav, .col-1-3:last-child {
 
 nav {
 	font-size: .75rem;
+	margin: 1.75em 0; 
+	text-align: right;
 	vertical-align: middle;
-}
-
-[class*="col-"] nav {
-	padding: 0;
-	margin-bottom: 0;
 }
 
 li {
@@ -205,33 +183,35 @@ footer {
 	background-color: #1EA78D;
 	color: #FFF;
 	border-top: 5px solid #062033;
-	padding: 120px;
-}
-
-footer div {
-	width: 300px;
 }
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES
 -------------------------------------------------------------- */
-#bg-green {
-	background-color: #104F41;
+
+#hero {
+	padding: 12em 0 5em;
+	color: #FFF;
 }
 
-#bg-dark-green {
+.bg-dark-green {
 	background-color: #10443F;
 	color: #FFF;
 }
 
-#bg-light-green {
+.bg-green {
+	background-color: #104F41;
+}
+
+.bg-light-green {
 	background-color: #F4F7F9;
 }
 
-.f-left {
-	float: left;
+.center-block {
+	float: none;
+	margin: 0 auto;
 }
 
-.f-right {
-	float: right;
+.txt-center {
+	text-align: center;
 }
