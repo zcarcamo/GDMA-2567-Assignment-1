@@ -50,19 +50,6 @@ html {
 	font-size: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
-	html {
-		font-size: 1rem;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	html {
-		font-size: 1rem;
-	}
-}
-
-
 /*--------------------------------------------------------------
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
@@ -80,8 +67,12 @@ h1+p {
 	vertical-align: middle;
 }
 
-header .col-sm-6:first-child {
-	margin: 0;
+ul {
+	padding: 0;
+}
+
+li {
+	margin-left: 25px;
 }
 
 li, h1, h1+p {
@@ -98,9 +89,11 @@ li a:hover{
 }
 
 h2 {
-	text-align: center;
-	font-weight: 700;
 	border-bottom: 1px solid #DCE1E5;
+	font-weight: 700;
+	margin-top: 0;
+	padding: 3em 0 10px;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -112,8 +105,41 @@ h4 {
 	margin-top: 0;
 }
 
+footer p {
+	margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+5.0 - OBJECTS
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+6.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+/*NAVIGATION*/
+
+nav {
+	font-size: .75rem;
+	margin: 1.75em 0; 
+	text-align: right;
+	vertical-align: middle;
+}
+
+/*HEADER*/
+
+header .col-sm-6:first-child {
+	margin: 0;
+}
+
+#hero {
+	color: #FFF;
+}
+
 #hero p:first-child {
 	font-size: 3.5rem;
+	margin-bottom: 0;
 }
 
 #bg-green>.wrapper p {
@@ -135,46 +161,8 @@ h4 {
 	text-align: center;
 }
 
-#bold {
-	font-weight: 700;
-}
-
 #highlight, h2 {
 	color: #0EB493;
-}
-
-footer p {
-	margin-bottom: 0;
-}
-
-
-@media only screen and (min-width: 768px) {
-	
-}
-
-@media only screen and (min-width: 1024px) {
-	
-}
-
-/*--------------------------------------------------------------
-5.0 - OBJECTS
--------------------------------------------------------------- */
-
-/*--------------------------------------------------------------
-6.0 - COMPONENTS
--------------------------------------------------------------- */
-
-/*NAVIGATION*/
-
-nav {
-	font-size: .75rem;
-	margin: 1.75em 0; 
-	text-align: right;
-	vertical-align: middle;
-}
-
-li {
-	margin-left: 25px;
 }
 
 /* -- FOOTER -- */
@@ -183,16 +171,28 @@ footer {
 	background-color: #1EA78D;
 	color: #FFF;
 	border-top: 5px solid #062033;
+	padding: 5em 0;
 }
+
+@media only screen and (min-width: 1024px) {
+	#hero {
+		padding: 12em 0 5em;
+	}
+	
+	#hero p:nth-child(2) {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	#hero p:last-child {
+		margin: 1em 0 0;
+	}
+}
+
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES
 -------------------------------------------------------------- */
-
-#hero {
-	padding: 12em 0 5em;
-	color: #FFF;
-}
 
 .bg-dark-green {
 	background-color: #10443F;
@@ -212,6 +212,26 @@ footer {
 	margin: 0 auto;
 }
 
+.btm-padding {
+	padding-bottom: 5em;
+}
+
+.margin-none {
+	margin: 0;
+}
+
 .txt-center {
 	text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	.margin-none-sm {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.txt-center-sm {
+		text-align: center;
+	}
 }
